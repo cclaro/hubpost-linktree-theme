@@ -4,6 +4,12 @@
   "label" : "Links",
   "required" : false,
   "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "49462385-76a3-bd8b-6467-1281d7771d77",
+    "default" : 1
+  },
   "children" : [ {
     "id" : "49462385-76a3-bd8b-6467-1281d7771d77",
     "name" : "Labe",
@@ -46,7 +52,7 @@
   "group_occurrence_meta" : null,
   "type" : "group",
   "display_width" : null,
-  "default" : {
+  "default" : [ {
     "Labe" : "Link Label",
     "url" : {
       "content_id" : null,
@@ -54,5 +60,5 @@
       "type" : "EXTERNAL"
     },
     "icon" : { }
-  }
+  } ]
 } ]
