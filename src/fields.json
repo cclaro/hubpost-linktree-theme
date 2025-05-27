@@ -1,0 +1,116 @@
+[
+  {
+    "tab": "CONTENT",
+    "fields": [
+      {
+        "name": "profile_image",
+        "label": "Profile Image",
+        "required": true,
+        "type": "image",
+        "default": {
+          "src": "",
+          "alt": "Profile Picture"
+        }
+      },
+      {
+        "name": "profile_name",
+        "label": "Display Name",
+        "required": true,
+        "type": "text",
+        "default": "Your Name"
+      },
+      {
+        "name": "profile_bio",
+        "label": "Bio",
+        "type": "text",
+        "default": "Your bio goes here"
+      }
+    ]
+  },
+  {
+    "tab": "CONTENT",
+    "fields": [
+      {
+        "name": "links",
+        "label": "Links",
+        "type": "group",
+        "occurrence": {
+          "min": 0,
+          "max": null
+        },
+        "default": [],
+        "children": [
+          {
+            "name": "title",
+            "label": "Link Title",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "url",
+            "label": "URL",
+            "type": "url",
+            "required": true
+          },
+          {
+            "name": "icon",
+            "label": "Icon",
+            "type": "image"
+          },
+          {
+            "name": "description",
+            "label": "Description",
+            "type": "text"
+          },
+          {
+            "name": "background_color",
+            "label": "Background Color",
+            "type": "color",
+            "default": "#ffffff"
+          },
+          {
+            "name": "text_color",
+            "label": "Text Color",
+            "type": "color",
+            "default": "#333333"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tab": "CONTENT",
+    "fields": [
+      {
+        "name": "social_links",
+        "label": "Social Media Links",
+        "type": "group",
+        "occurrence": {
+          "min": 0,
+          "max": null
+        },
+        "default": [],
+        "children": [
+          {
+            "name": "platform",
+            "label": "Platform Name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "url",
+            "label": "Profile URL",
+            "type": "url",
+            "required": true
+          },
+          {
+            "name": "icon",
+            "label": "Platform Icon",
+            "type": "image",
+            "required": true
+          }
+        ]
+      }
+    ]
+  }
+] 

@@ -1,0 +1,17 @@
+{
+  "name": "linktree-theme",
+  "version": "1.0.0",
+  "description": "A HubSpot theme inspired by Linktree, structured for modern development.",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{js,css,scss,html,json,md}\"",
+    "lint": "eslint src/js/"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.5"
+  },
+  "dependencies": {}
+} 

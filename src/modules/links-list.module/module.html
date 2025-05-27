@@ -1,0 +1,15 @@
+<div class="links-list">
+  {% for link in module.links %}
+    <a href="{{ link.url }}" class="link-item" style="background: {{ link.bg_color }}; color: {{ link.text_color }};">
+      {% if link.icon %}
+        <img src="{{ link.icon }}" alt="{{ link.title }} icon" class="link-icon" />
+      {% endif %}
+      <div class="link-content">
+        <span class="link-title">{{ link.title }}</span>
+        {% if link.description %}
+          <span class="link-description">{{ link.description }}</span>
+        {% endif %}
+      </div>
+    </a>
+  {% endfor %}
+</div> 

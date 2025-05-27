@@ -1,0 +1,9 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 213698688446,
+  "label" : "Links List",
+  "icon" : "fontawesome-5.14.0:Broom:SOLID",
+  "is_available_for_new_content" : true
+}

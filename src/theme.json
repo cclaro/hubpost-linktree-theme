@@ -1,0 +1,13 @@
+{
+  "label": "Linktree Theme",
+  "name": "Linktree-Inspired Theme",
+  "description": "A modern, customizable HubSpot theme inspired by Linktree functionality",
+  "enable_domain_stylesheets": false,
+  "preview_path": "./templates/home.html",
+  "screenshot_path": "./images/theme-preview.jpg",
+  "author": {
+    "name": "HubSpot",
+    "email": "support@hubspot.com",
+    "website": "https://www.hubspot.com"
+  }
+} 

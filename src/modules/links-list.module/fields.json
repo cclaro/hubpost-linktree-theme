@@ -1,0 +1,58 @@
+[ {
+  "id" : "7c554bf8-c982-7982-0438-25a136b70c5e",
+  "name" : "links",
+  "label" : "Links",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "49462385-76a3-bd8b-6467-1281d7771d77",
+    "name" : "Labe",
+    "label" : "Label",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Link Label"
+  }, {
+    "id" : "da68b7d0-8e70-540e-5792-accc1b1ee21f",
+    "name" : "url",
+    "label" : "URL",
+    "required" : true,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "id" : "47b59255-bfcd-3f7e-be16-c5da22ce6c76",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "icon_set" : "fontawesome-5.14.0",
+    "type" : "icon",
+    "display_width" : null,
+    "default" : { }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "Labe" : "Link Label",
+    "url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    },
+    "icon" : { }
+  }
+} ]

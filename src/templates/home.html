@@ -1,0 +1,44 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Linktree Style Page
+-->
+<!DOCTYPE html>
+<html lang="{{ html_lang }}" {{ html_attrs }}>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ content.html_title }}</title>
+    <meta name="description" content="{{ content.meta_description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ require_css(get_asset_url("../css/styles.css")) }}
+    {{ require_js(get_asset_url("../js/main.js")) }}
+    {{ standard_header_includes }}
+  </head>
+  <body>
+    <div class="linktree-container">
+      <!-- Profile Section -->
+      <div class="profile-section">
+        {% if content.profile_image %}
+          <img src="{{ content.profile_image }}" alt="{{ content.profile_name }}" class="profile-image">
+        {% endif %}
+        <h1 class="profile-name">{{ content.profile_name }}</h1>
+        <p class="profile-bio">{{ content.profile_bio }}</p>
+      </div>
+
+      <!-- Links Section -->
+      <div class="links-section">
+        {% module "links_list" path="../modules/links-list.module" label="Links List" %}
+      </div>
+
+      <!-- Social Icons -->
+      <div class="social-icons">
+        {% for social in content.social_links %}
+          <a href="{{ social.url }}" class="social-icon" target="_blank" rel="noopener noreferrer">
+            <img src="{{ social.icon }}" alt="{{ social.platform }}">
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+    {{ standard_footer_includes }}
+  </body>
+</html> 
