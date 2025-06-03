@@ -1,4 +1,5 @@
 (function() {
+  console.log('main.js loaded');
   // Track link clicks
   function trackLinkClick(event) {
     const link = event.currentTarget;

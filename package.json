@@ -5,13 +5,19 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier --write \"src/**/*.{js,css,scss,html,json,md}\"",
-    "lint": "eslint src/js/"
+    "lint": "eslint src/js/",
+    "build:css": "tailwindcss -i ./src/css/styles.css -o ./src/css/output.css --watch",
+    "dev": "concurrently \"hs watch . linktree-theme\" \"npm run build:css\""
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^8.56.0",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.35",
+    "autoprefixer": "^10.4.17",
+    "concurrently": "^8.2.2"
   },
   "dependencies": {}
-} 
+}
